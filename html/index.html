@@ -13,14 +13,36 @@
   <body>
     <header>
       <h1>Escape to the Beach</h1>
+      <h3>Please fill out all the following fields to register for the Escape to the Beach trip.</h3>
     </header>
     <div>
-      <section>
+      <section id="form">
+        <fieldset>
+          <form>
+            <legend><strong>Personal Information</strong></legend><br>
+            Name:<br>
+            <input type="text" name="name" required><br>
+            Email:<br>
+            <input type="email" name="email" required><br>
+            Phone (no dashes):<br>
+            <input type="tel" name="phone" required><br>
+            Address:<br>
+            <input type="text" name="address" required><br>
+          </form><br>
+          <form>
+            <legend><strong>Dietary Suggestions</strong></legend><br>
+            Restrictions:<br>
+            <input type="checkbox" name="vegan" value="vegan"> Vegan<br>
+            <input type="checkbox" name="vegitarian" value="vegitarian"> Vegitarian<br>
+            <input type="checkbox" name="glutenfree" value="glutenfree"> Gluten-Free<br>
+            <input type="checkbox" name="kosher" value="kosher"> Kosher<br>
+            Other:
+            <input type="text" name="text"><br>
+          </form>
+        </fieldset>
       </section>
       <footer>
         <p>&copy; Matt Hunter 2014</p>
-        <a href="http://www.twitter.com/mechlo"><img src="img/twitter-wrap.png" alt="Twitter logo>" class="social-icon"></a>
-        <a href="http://www.facebook.com/matthewshunter"><img src="img/facebook-wrap.png" alt="Twitter logo>" class="social-icon"></a>
       </footer>
     </div>
   </body>
