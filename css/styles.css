@@ -1,0 +1,12 @@
+h1 {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 10px;
+}
+
+#form {
+  border: none;
+  background-color: lightblue;
+}

@@ -2,11 +2,9 @@
 <html>
   <meta charset="uti-8">
   <head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <title>Escape to the Beach</title>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/script.js"></script>
   </head>
@@ -19,25 +17,35 @@
       <section id="form">
         <fieldset>
           <form>
-            <legend><strong>Personal Information</strong></legend><br>
-            Name:<br>
-            <input type="text" name="name" required><br>
-            Email:<br>
-            <input type="email" name="email" required><br>
-            Phone (no dashes):<br>
-            <input type="tel" name="phone" required><br>
-            Address:<br>
-            <input type="text" name="address" required><br>
-          </form><br>
+            <h3><strong>Personal Information</strong></h3>
+            <p>Name:</p>
+            <input type="text" name="name" id="name" required>
+            <p>Email:</p>
+            <input type="email" name="email" id="email" required>
+            <p>Phone (no dashes):</p>
+            <input type="tel" name="phone" id="phone" required>
+            </p>Address:</p>
+            <input type="text" name="address" id="address" required>
+          </form>
           <form>
-            <legend><strong>Dietary Suggestions</strong></legend><br>
-            Restrictions:<br>
+            <h3><strong>Dietary Suggestions</strong></h3>
+            Restrictions:<br><p>We will do our best to accomodate. We will be unable to offer a discount.</p>
             <input type="checkbox" name="vegan" value="vegan"> Vegan<br>
             <input type="checkbox" name="vegitarian" value="vegitarian"> Vegitarian<br>
             <input type="checkbox" name="glutenfree" value="glutenfree"> Gluten-Free<br>
-            <input type="checkbox" name="kosher" value="kosher"> Kosher<br>
-            Other:
-            <input type="text" name="text"><br>
+            <input type="checkbox" name="nondairy" value="nondairy"> Non-Dairy<br>
+            <p>Other:</p><input type="text" name="text" id="otherFood">
+            <p>Can you attend the Pre-trip meeting?</p>
+            <input type="checkbox" name="pretrip1" required>Yes
+            <input type="checkbox" name="pretrip1" required>No
+            <p>Do you have a friend you would like to share a room with?</p>
+            <input type="checkbox" name="room" required>Yes
+            <input type="checkbox" name="room" required>No
+            <p>Who?</p>
+            <input type="text" name="who" id="who">
+            <p>Would you like to drive?</p>
+            <input type="checkbox" name="drive" required>Yes
+            <input type="checkbox" name="drive" required>No       
           </form>
         </fieldset>
       </section>
