@@ -4,6 +4,7 @@
   <head>
     <title>Escape to the Beach</title>
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/script.js"></script>
@@ -24,28 +25,28 @@
             <input type="email" name="email" id="email" required>
             <p>Phone (no dashes):</p>
             <input type="tel" name="phone" id="phone" required>
-            </p>Address:</p>
+            <p>Address:</p>
             <input type="text" name="address" id="address" required>
           </form>
           <form>
             <h3><strong>Dietary Suggestions</strong></h3>
-            Restrictions:<br><p>We will do our best to accomodate. We will be unable to offer a discount.</p>
+            <h6>Restrictions:</h6><h6>We will do our best to accomodate. We will be unable to offer a discount.</h6>
             <input type="checkbox" name="vegan" value="vegan"> Vegan<br>
             <input type="checkbox" name="vegitarian" value="vegitarian"> Vegitarian<br>
             <input type="checkbox" name="glutenfree" value="glutenfree"> Gluten-Free<br>
             <input type="checkbox" name="nondairy" value="nondairy"> Non-Dairy<br>
             <p>Other:</p><input type="text" name="text" id="otherFood">
             <p>Can you attend the Pre-trip meeting?</p>
-            <input type="checkbox" name="pretrip1" required>Yes
-            <input type="checkbox" name="pretrip1" required>No
+            <input type="radio" name="pretrip1" required>Yes
+            <input type="radio" name="pretrip1" required>No
             <p>Do you have a friend you would like to share a room with?</p>
-            <input type="checkbox" name="room" required>Yes
-            <input type="checkbox" name="room" required>No
+            <input type="radio" name="room" required>Yes
+            <input type="radio" name="room" required>No
             <p>Who?</p>
             <input type="text" name="who" id="who">
             <p>Would you like to drive?</p>
-            <input type="checkbox" name="drive" required>Yes
-            <input type="checkbox" name="drive" required>No       
+            <input type="radio" name="drive" required>Yes
+            <input type="radio" name="drive" required>No       
           </form>
         </fieldset>
       </section>

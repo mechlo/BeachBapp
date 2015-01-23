@@ -1,5 +1,44 @@
-h1 {
+header {
+  border: solid black 1px;
+  text-align: center;
+
+}
+
+p {
+  margin: 0 0 5px 0;
+  padding: 2px 0;
+}
+
+input {
+  margin: 0 0 5px 0;
+  padding: 2px 0;
+}
+
+h1, h3 {
   font-family: sans-serif;
+  font-size: 2em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+input[text] {
+  display: block;
+  width: 100%
+  background: slategray;
+  background-image: none;
+  border: 1px solid lightgray;
+  color: white;
+  border-radius: 2px;
+
+}
+
+h6 {
+  font-family: sans-serif;
+  font-size: em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
 }
 
 body {
@@ -8,5 +47,5 @@ body {
 
 #form {
   border: none;
-  background-color: lightblue;
+  background-color: lightgray;
 }
