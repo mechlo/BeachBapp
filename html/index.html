@@ -15,27 +15,51 @@
       <h3>Please fill out all the following fields to register for the Escape to the Beach trip.</h3>
     </header>
     <div>
-      <section id="form">
+      <section class="form">
         <fieldset>
-          <form>
+          <!-- Should I use a label tag for these? -->
+          <form id="info">
             <h3><strong>Personal Information</strong></h3>
-            <p>Name:</p>
-            <input type="text" name="name" id="name" required>
-            <p>Email:</p>
-            <input type="email" name="email" id="email" required>
-            <p>Phone (no dashes):</p>
-            <input type="tel" name="phone" id="phone" required>
-            <p>Address:</p>
-            <input type="text" name="address" id="address" required>
+            <label>Name:
+              <input type="text" name="name" id="name" required>
+            </label>
+            <label>Email:
+              <input type="email" name="email" id="email" required>
+            </label>
+            <label>Phone (no dashes):
+              <input type="tel" name="phone" id="phone" required>
+            </label>
+            <label>Address:
+              <input type="text" name="address" id="address" required>
+            </label>
           </form>
-          <form>
+          <form id="transport">
+            <label>Would you like to be a...
+            <input type="radio" name="driver" value="Driver" id="driver" required></label>
+            <div id="drivermenu">
+              <label>Make/model of car.
+                <input type="text" name="car_model" id="car_model">
+              </label>
+                <label>License Plate
+                <input type="text" name="plate" id="plate" maxlength="6">
+              </label>
+              <label>Departure Date/Time
+                <input type="text" name="plate" id="plate" maxlength="6">
+              </label>
+              <label>Starting Location
+                <input type="text" name="Starting Location" id="startlocal" maxlength="6">
+              </label>
+              <label>How many passengers can you take with you?
+                <input type="text" name="Passenger Number" id="passno" maxlength="1">
+              </label>
+            </div>
+            <input type="radio" name="Passenger" value="passenger" id="passenger">
+            <input type="radio" name="No Preference" value="nopref" id="nopref">
+          </form>
+          <form id="food">
             <h3><strong>Dietary Suggestions</strong></h3>
             <h6>Restrictions:</h6><h6>We will do our best to accomodate. We will be unable to offer a discount.</h6>
-            <input type="checkbox" name="vegan" value="vegan"> Vegan<br>
-            <input type="checkbox" name="vegitarian" value="vegitarian"> Vegitarian<br>
-            <input type="checkbox" name="glutenfree" value="glutenfree"> Gluten-Free<br>
-            <input type="checkbox" name="nondairy" value="nondairy"> Non-Dairy<br>
-            <p>Other:</p><input type="text" name="text" id="otherFood">
+            <input type="text" name="" value="diet">
             <p>Can you attend the Pre-trip meeting?</p>
             <input type="radio" name="pretrip1" required>Yes
             <input type="radio" name="pretrip1" required>No
@@ -51,7 +75,7 @@
         </fieldset>
       </section>
       <footer>
-        <p>&copy; Matt Hunter 2014</p>
+        <p>&copy; Matt Hunter 2015</p>
       </footer>
     </div>
   </body>
