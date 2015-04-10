@@ -11,22 +11,25 @@
   </head>
   <body>
     <header>
-      <h1>Escape to the Beach</h1>
-      <h1>Please fill out all the following fields to register for the Escape to the Beach trip.</h1>
+      <h2>Escape to the Beach</h2>
+      <h5>Please fill out all the following fields to register for the Escape to the Beach trip.</h5>
     </header>
     <div>
       <section class="form">
         <fieldset>
           <form id="info">
             <h6><strong>Personal Information</strong></h6>
-            <label>Name:
-              <input type="text" name="name" id="name" required>
+            <label>First Name:
+              <input type="text" name="firstname" id="firstname" required>
+            </label>
+            <label>Last Name:
+              <input type="text" name="lastname" id="lastname" required>
             </label>
             <label>Email:
-              <input type="email" name="email" id="email" required>
+              <input type="email" name="email" id="email" onfocus="if(this.value == 'you@example.com') { this.value = ''; }" value="you@example.com" style="color='d3d3d3'"required>
             </label>
-            <label>Phone (no dashes):
-              <input type="tel" name="phone" id="phone" required>
+            <label>Phone:
+              <input type="tel" name="phone" id="phone" onfocus="if(this.value == 'xxx-xxx-xxxx') { this.value = ''; }" value="xxx-xxx-xxxx" required>
             </label>
             <label>Address:
               <input type="text" name="address" id="address" required>
@@ -46,10 +49,10 @@
                 <input type="text" name="plate" id="plate" maxlength="6">
               </label>
               <label>Departure Date/Time
-                <input type="text" name="plate" id="plate" maxlength="6">
+                <input type="text" name="depart" id="depart" maxlength="6">
               </label>
               <label>Starting Location
-                <input type="text" name="Starting Location" id="startlocal" maxlength="6">
+                <input type="text" name="startlocal" id="startlocal" maxlength="6">
               </label>
               <label>How many passengers can you take with you?
                 <input type="text" name="Passenger Number" id="passno" maxlength="1">
@@ -67,14 +70,14 @@
               <input type="radio" name="recipe1" required>Skip
             </label>
             <label>Meal Type/Recipe Name
-              <input type="radio" name="recipe1" required>Master
-              <input type="radio" name="recipe1" required>Minion
-              <input type="radio" name="recipe1" required>Skip
+              <input type="radio" name="recipe2" required>Master
+              <input type="radio" name="recipe2" required>Minion
+              <input type="radio" name="recipe2" required>Skip
             </label>
             <label>Meal Type/Recipe Name
-              <input type="radio" name="recipe1" required>Master
-              <input type="radio" name="recipe1" required>Minion
-              <input type="radio" name="recipe1" required>Skip
+              <input type="radio" name="recipe3" required>Master
+              <input type="radio" name="recipe3" required>Minion
+              <input type="radio" name="recipe3" required>Skip
             </label>
           </form>
           <form id="other">
