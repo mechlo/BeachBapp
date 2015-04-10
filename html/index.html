@@ -12,14 +12,13 @@
   <body>
     <header>
       <h1>Escape to the Beach</h1>
-      <h3>Please fill out all the following fields to register for the Escape to the Beach trip.</h3>
+      <h1>Please fill out all the following fields to register for the Escape to the Beach trip.</h1>
     </header>
     <div>
       <section class="form">
         <fieldset>
-          <!-- Should I use a label tag for these? -->
           <form id="info">
-            <h3><strong>Personal Information</strong></h3>
+            <h6><strong>Personal Information</strong></h6>
             <label>Name:
               <input type="text" name="name" id="name" required>
             </label>
@@ -35,12 +34,15 @@
           </form>
           <form id="transport">
             <label>Would you like to be a...
-            <input type="radio" name="driver" value="Driver" id="driver" required></label>
-            <div id="drivermenu">
+            <input type="radio" name="driver" value="Driver" id="driver">Driver
+            <input type="radio" name="driver" value="passenger" id="passenger">Passenger
+            <input type="radio" name="driver" value="nopref" id="nopref">No Preference
+            </label>
+            <div id="drivermenu" hidden>
               <label>Make/model of car.
                 <input type="text" name="car_model" id="car_model">
               </label>
-                <label>License Plate
+              <label>License Plate
                 <input type="text" name="plate" id="plate" maxlength="6">
               </label>
               <label>Departure Date/Time
@@ -53,29 +55,44 @@
                 <input type="text" name="Passenger Number" id="passno" maxlength="1">
               </label>
             </div>
-            <input type="radio" name="Passenger" value="passenger" id="passenger">
-            <input type="radio" name="No Preference" value="nopref" id="nopref">
           </form>
           <form id="food">
-            <h3><strong>Dietary Suggestions</strong></h3>
-            <h6>Restrictions:</h6><h6>We will do our best to accomodate. We will be unable to offer a discount.</h6>
-            <input type="text" name="" value="diet">
-            <p>Can you attend the Pre-trip meeting?</p>
-            <input type="radio" name="pretrip1" required>Yes
-            <input type="radio" name="pretrip1" required>No
-            <p>Do you have a friend you would like to share a room with?</p>
-            <input type="radio" name="room" required>Yes
-            <input type="radio" name="room" required>No
-            <p>Who?</p>
-            <input type="text" name="who" id="who">
-            <p>Would you like to drive?</p>
-            <input type="radio" name="drive" required>Yes
-            <input type="radio" name="drive" required>No       
+            <h6><strong>Food Preferences</strong></h6>
+            <label>Are there any foods you'd rather not eat?
+              <input type="text" name="diet" value="">
+            </label>
+            <label>Meal Type/Recipe Name
+              <input type="radio" name="recipe1" required>Master
+              <input type="radio" name="recipe1" required>Minion
+              <input type="radio" name="recipe1" required>Skip
+            </label>
+            <label>Meal Type/Recipe Name
+              <input type="radio" name="recipe1" required>Master
+              <input type="radio" name="recipe1" required>Minion
+              <input type="radio" name="recipe1" required>Skip
+            </label>
+            <label>Meal Type/Recipe Name
+              <input type="radio" name="recipe1" required>Master
+              <input type="radio" name="recipe1" required>Minion
+              <input type="radio" name="recipe1" required>Skip
+            </label>
+          </form>
+          <form id="other">
+            <label>Can you attend the Pre-trip meeting?</p>
+              <input type="radio" name="pretrip1" required>Yes
+              <input type="radio" name="pretrip1" required>No
+            <label>Do you have a friend you would like to share a room with?
+              <input type="radio" name="room" required>Yes
+              <input type="radio" name="room" required>No
+            </label>
+            <label>Who?
+              <input type="text" name="who" id="who">
+            </label>     
           </form>
         </fieldset>
       </section>
       <footer>
-        <p>&copy; Matt Hunter 2015</p>
+        <p>&copy; Pints and Crafts 2015</p>
       </footer>
     </div>
   </body>
