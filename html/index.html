@@ -12,13 +12,13 @@
   <body>
     <header>
       <h1>Escape to the Beach</h1>
-      <h3>Please fill out all the following fields to register for the Escape to the Beach trip.</h3>
+      <h1>Please fill out all the following fields to register for the Escape to the Beach trip.</h1>
     </header>
     <div>
       <section class="form">
         <fieldset>
           <form id="info">
-            <h5><strong>Personal Information</strong></h5>
+            <h6><strong>Personal Information</strong></h6>
             <label>Name:
               <input type="text" name="name" id="name" required>
             </label>
@@ -42,7 +42,7 @@
               <label>Make/model of car.
                 <input type="text" name="car_model" id="car_model">
               </label>
-                <label>License Plate
+              <label>License Plate
                 <input type="text" name="plate" id="plate" maxlength="6">
               </label>
               <label>Departure Date/Time
@@ -57,11 +57,21 @@
             </div>
           </form>
           <form id="food">
-            <h5><strong>Dietary Suggestions</strong></h5>
+            <h6><strong>Food Preferences</strong></h6>
             <label>Are there any foods you'd rather not eat?
               <input type="text" name="diet" value="">
             </label>
-            <label>Recipe Name
+            <label>Meal Type/Recipe Name
+              <input type="radio" name="recipe1" required>Master
+              <input type="radio" name="recipe1" required>Minion
+              <input type="radio" name="recipe1" required>Skip
+            </label>
+            <label>Meal Type/Recipe Name
+              <input type="radio" name="recipe1" required>Master
+              <input type="radio" name="recipe1" required>Minion
+              <input type="radio" name="recipe1" required>Skip
+            </label>
+            <label>Meal Type/Recipe Name
               <input type="radio" name="recipe1" required>Master
               <input type="radio" name="recipe1" required>Minion
               <input type="radio" name="recipe1" required>Skip
