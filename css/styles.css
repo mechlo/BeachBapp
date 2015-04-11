@@ -1,12 +1,67 @@
+body {
+  margin: 10px;
+}
+
+
 header {
-  border: solid black 1px;
   text-align: center;
+  padding: 10px;
 
 }
+
+header p {
+  font-size: 1.05em;
+  color: #6e4942;
+  font-weight: bold;
+}
+
 
 p {
   margin: 0 0 5px 0;
   padding: 2px 0;
+
+}
+
+
+
+/* HEADING STYLES */
+
+h1 {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-weight: bold;
+  font-size: 2.25em;
+  margin: 0 0 .25em 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  background: -webkit-linear-gradient(#6e4942, #60dfe5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+h2 {
+  font-family: sans-serif;
+  font-size: 1.35em;
+  margin: 0 0 0 0;
+  padding: 5px 0 5px 0;
+  width: 100%;
+  font-weight: bold;
+  color: #6e4942;
+}
+
+
+
+/* FORM STYLES */
+
+.form {
+  border: none;
+  background: -webkit-linear-gradient(#c4fff9, #60dfe5, #0197c3);
+  border-radius: 15px;
+  padding: 1.5em;
+  width: 85%;
+  margin: auto;
+
 }
 
 input {
@@ -14,38 +69,21 @@ input {
   padding: 2px 0;
 }
 
-h1, h3 {
-  font-family: sans-serif;
-  font-size: 2em;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  width: 100%;
-}
-
-input[text] {
-  display: block;
-  width: 100%
-  background: slategray;
-  background-image: none;
-  border: 1px solid lightgray;
-  color: white;
-  border-radius: 2px;
+[type="radio"] {
+    margin: 0.25em;
+    cursor: pointer;
+    font-size: 1.5em;
 
 }
 
-h6 {
-  font-family: sans-serif;
-  font-size: em;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  width: 100%;
+span {
+  font-weight: normal;
+  font-size: .85em;
 }
 
-body {
-  margin: 10px;
-}
 
-#form {
-  border: none;
-  background-color: lightgray;
-}
+
+
+
+
+
