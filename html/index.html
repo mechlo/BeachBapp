@@ -9,91 +9,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/script.js"></script>
   </head>
+  
+
   <body>
     <header>
-      <h2>Escape to the Beach</h2>
-      <h5>Please fill out all the following fields to register for the Escape to the Beach trip.</h5>
+      <h1>Escape to the Beach</h1>
+      <p>Please fill out all the following fields to register for the Escape to the Beach trip.</p>
     </header>
+
+
+  <!--   PERSONAL INFORMATION   -->  
+
     <div>
       <section class="form">
         <fieldset>
           <form id="info">
-            <h6><strong>Personal Information</strong></h6>
-            <label>First Name:
+            <h2>Personal Information</strong></h2>
+            <label for "firstname">First Name:</label>
               <input type="text" name="firstname" id="firstname" required>
-            </label>
-            <label>Last Name:
+            
+            <label for "lastname">Last Name:</label>
               <input type="text" name="lastname" id="lastname" required>
-            </label>
-            <label>Email:
+            
+            <label for "email">Email:</label>
               <input type="email" name="email" id="email" onfocus="if(this.value == 'you@example.com') { this.value = ''; }" value="you@example.com" style="color='d3d3d3'"required>
-            </label>
-            <label>Phone:
+            
+            <label for "phone">Phone:</label>
               <input type="tel" name="phone" id="phone" onfocus="if(this.value == 'xxx-xxx-xxxx') { this.value = ''; }" value="xxx-xxx-xxxx" required>
-            </label>
-            <label>Address:
+            
+            <label for "address">Address:</label>
               <input type="text" name="address" id="address" required>
-            </label>
+            
           </form>
+
+<!-- TRANSPORTATION PREFERENCES --> 
+
+
           <form id="transport">
-            <label>Would you like to be a...
-            <input type="radio" name="driver" value="Driver" id="driver">Driver
-            <input type="radio" name="driver" value="passenger" id="passenger">Passenger
-            <input type="radio" name="driver" value="nopref" id="nopref">No Preference
+            <h2>Carpooling Preferences</h2>
+            Would you like to be a...  
+            <label for "driver">
+              <input type="radio" name="driver" value="driver" id="driver"><span>Driver</span>
             </label>
+            <label for "passenger"> 
+              <input type="radio" name="driver" value="passenger" id="passenger"><span>Passenger</span>
+            </label>
+            <label for "nopref">
+              <input type="radio" name="driver" value="nopref" id="nopref"><span>No Preference</span>
+            </label>
+    
             <div id="drivermenu" hidden>
-              <label>Make/model of car.
+              Make/model of car:
+              <label for "car_model">  
                 <input type="text" name="car_model" id="car_model">
               </label>
-              <label>License Plate
+              License Plate:
+              <label for "plate">
                 <input type="text" name="plate" id="plate" maxlength="6">
               </label>
-              <label>Departure Date/Time
+              Departure Date/Time:
+              <label for "depart">
                 <input type="text" name="depart" id="depart" maxlength="6">
               </label>
-              <label>Starting Location
+              Starting Location:
+              <label for "startlocal">
                 <input type="text" name="startlocal" id="startlocal" maxlength="6">
               </label>
-              <label>How many passengers can you take with you?
-                <input type="text" name="Passenger Number" id="passno" maxlength="1">
+              How many passengers can you take with you?
+              <label for "passenger_number">
+                <input type="text" name="passenger_number" id="passno" maxlength="1">
               </label>
             </div>
+
+<!-- FOOD PREFERENCES --> 
+
+
           </form>
           <form id="food">
-            <h6><strong>Food Preferences</strong></h6>
-            <label>Are there any foods you'd rather not eat?
-              <input type="text" name="diet" value="">
+            <h2>Food Preferences</strong></h2>
+            Are there any foods you'd rather not eat?
+            <label for "diet">  
+            <input type="text" name="diet" value="">
             </label>
-            <label>Meal Type/Recipe Name
-              <input type="radio" name="recipe1" required>Master
-              <input type="radio" name="recipe1" required>Minion
-              <input type="radio" name="recipe1" required>Skip
+            Meal Type/Recipe Name
+            <label for "master">
+              <input type="radio" name="recipe1" value="master" required><span>Master</span>
             </label>
-            <label>Meal Type/Recipe Name
-              <input type="radio" name="recipe2" required>Master
-              <input type="radio" name="recipe2" required>Minion
-              <input type="radio" name="recipe2" required>Skip
+            <label for "minion">  
+              <input type="radio" name="recipe1" value="minion" required><span>Minion</span>
             </label>
-            <label>Meal Type/Recipe Name
-              <input type="radio" name="recipe3" required>Master
-              <input type="radio" name="recipe3" required>Minion
-              <input type="radio" name="recipe3" required>Skip
+            <label for "skip">  
+              <input type="radio" name="recipe1" value="skip" required><span>Skip</span>
+            </label>
+            Meal Type/Recipe Name
+             <label for "master">
+              <input type="radio" name="recipe2" value="master" required><span>Master</span>
+            </label>
+            <label for "minion">  
+              <input type="radio" name="recipe2" value="minion" required><span>Minion</span>
+            </label>
+            <label for "skip">  
+              <input type="radio" name="recipe2" value="skip" required><span>Skip</span>
+            </label>
+            Meal Type/Recipe Name
+              <label for "master">
+              <input type="radio" name="recipe3" value="master" required><span>Master</span>
+            </label>
+            <label for "minion">  
+              <input type="radio" name="recipe3" value="minion" required><span>Minion</span>
+            </label>
+            <label for "skip">  
+              <input type="radio" name="recipe3" value="skip" required><span>Skip</span>
             </label>
           </form>
+
+<!-- PRE-TRIP MEETING ATTENDANCE AND ROOMMATE PREFERENCES --> 
+
+
           <form id="other">
-            <label>Can you attend the Pre-trip meeting?</p>
-              <input type="radio" name="pretrip1" required>Yes
-              <input type="radio" name="pretrip1" required>No
-            <label>Do you have a friend you would like to share a room with?
-              <input type="radio" name="room" required>Yes
-              <input type="radio" name="room" required>No
+            Can you attend the pre-trip meeting?</p>
+            <label for "yes">
+              <input type="radio" name="pretrip1" value="yes" required><span>Yes</pan>
+            </label>  
+            <label for "no">  
+              <input type="radio" name="pretrip1" value="no" required><span>No</span>
+            </label>  
+            Do you have a friend you would like to share a room with?
+             <label for "yes">
+              <input type="radio" name="room" value="yes"required><span>Yes</span>
             </label>
-            <label>Who?
+             <label for "no">
+              <input type="radio" name="room" value="no"required><span>No</span>
+            </label>
+            
+            Who?
+            <label for "who">
               <input type="text" name="who" id="who">
             </label>     
           </form>
         </fieldset>
       </section>
+      
       <footer>
         <p>&copy; Pints and Crafts 2015</p>
       </footer>
